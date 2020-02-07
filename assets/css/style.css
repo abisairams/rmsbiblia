@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+.btn:focus, .btn:focus:active {
+    outline: none;
+}
+section.main {
+    margin-top: 50px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.main .row aside.booksList {
+    padding: 0 ;
+    height: 100vh;
+}
+.booksList .wrap {
+    overflow-y: auto;
+    height: 100%;
+    width: 220px;
+}
+.booksList h3, .capList h3 {
+    text-align: center;
+    padding-top: 10px;
+    background: white;
+    padding-bottom: 10px;
+    width: 16%;
+    top: 30px;
+    position: fixed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.booksList ul, .capList ul {
+    display: block;
+    list-style: none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.booksList ul li {
+    padding: 4px 0px;
+}
+.booksList ul li a {
+    font-size: 1em;
+    color: #333;
+}
+#root {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    overflow-y: auto;
+    display: block;
+    height: 100vh;
+}
+#root span {
+    font-size: 1.4em;
+}
+.glyphicon-cog {
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #333;
+}
+
+aside.capList .wrap{
+    overflow-y: auto;
+    height: 100vh;
+}
+aside.capList a.caps {
+    margin: 5px;
+    width: 50px;
+}
+.capList .wrap h3 {
+    width: 25%;
+}
+div.box {
+    padding: 2px 5px;
+}
+div.box.active {
+    background: rgba(230, 230, 230, 0.479);
+}
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(212, 212, 212, 0.452);
+}
+
+
+/* Dark theme */
+html.dark-theme body{
+    background: #101010;
+    color: #a7a7a7;
+}
+html.dark-theme .navbar{
+    background: #101010;
+    border-color: #000000;
+}
+html.dark-theme .booksList .wrap h3,
+html.dark-theme .capList .wrap h3 {
+    background: #101010;
+}
+html.dark-theme li a {
+    color: #a7a7a7;
+}
+html.dark-theme .btn-default, html.dark-theme .form-control {
+    background: #101010;
+    border-color: #000000;
+    color: #a7a7a7;
+}
+html.dark-theme .modal-dialog .modal-content {
+    background: #000000;
+}
+html.dark-theme .modal-dialog .modal-content .modal-header,
+html.dark-theme .modal-dialog .modal-content .modal-footer {
+    border-color: #101010;
+}
+html.dark-theme ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+
+/* Modal contents */
+.modal-content .modal-title {
+    font-size: 1.4em;
+}
+.modal-content label {
+    width: 120px;
+    font-size: 1.15em;
+    font-weight: normal;
+}
+.modal-content select {
+    width: 105px;
+    font-size: 1.15em;
+    outline: none;
+    background: no-repeat;
+    border: 1px solid #99999963;
+    border-radius: 2px;
+    padding: 5px;
+    color: #4a4a4a;
+}
+
+html.dark-theme .modal-content select {
+    background: #101010;
+    border: 1px solid #101010;
+    color: #a7a7a7;
+}
